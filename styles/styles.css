@@ -8,6 +8,10 @@ nav a {
     padding: 20px;
 }
 
+main {
+    margin: max-width: 840px;
+}
+
 h1 {
     color: darkblue;
 }
