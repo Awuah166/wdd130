@@ -1,0 +1,13 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --accent1-color: #d2d7df;
+    --accent2-color: #0514B8;
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Poppins", sans-serif;
+}
+
+header {
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+}
