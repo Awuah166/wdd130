@@ -1,4 +1,5 @@
 :root {
+    /* Color and font variables */
     --primary-color: #FFFFFF;
     --secondary-color: #0514B8;
     --accent1-color: #000000;
@@ -11,57 +12,71 @@
 header {
     background-color: var(--secondary-color);
     color: var(--primary-color);
+    display: flex; /* Place logo and nav side by side */
+    align-items: center; /* Vertically center logo and nav */
+    justify-content: space-between; /* Space out logo and nav */
+    padding: 1rem;
 }
 
-/* nav a color*/
+header img {
+    width: 100px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 5rem; /* Space between logo and nav */
+}
+
+/* Navigation link styles*/
 nav a {
     color: var(--primary-color);
+    padding-right: 5rem;
 }
 
-/* General styles */
+/* General box-sizing and reset */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Body styles */
+/* Body font and color */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
 
-/* Layout styles */
+/* Layout styles for main containers */
 header, main, footer {
     width: 840px;
     margin: 0 auto;
 }
 
-/* Main content styles */
+/* Heading styles*/
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
 }
-/* Main content styles */
+/* Main content spacing */
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
 }
-/* Footer styles */
+/* Social media link style (removes underline) */
 .socialmedia {
     text-decoration: none;
 }
 
+/* Hero section positioning */
 .hero {
     position: relative;
 }
 
+/* Hero background styles */
 .hero img {
     display: block;
     width: 100%;
     height: auto;
 }
 
+/* Hero heading styles */
 h1 {
     position: absolute;
     top: 20px;
@@ -72,6 +87,7 @@ h1 {
     background-color: var(--accent2-color);
 }
 
+/* Hero article styles */
 .hero article {
     position: absolute;
     top: 100px;
@@ -84,7 +100,86 @@ h1 {
     max-width: 100%;
 }
 
+/* Hero article image styles */
 .hero article img {
     float: right;
     width: 200px;
+}
+
+/* Main content top margin */
+main {
+    margin-top: 0.5rem;
+}
+
+/* Section header styles */
+.header {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+/* Section header h2 spacing */
+.header h2 {
+    margin-bottom: 0.5rem;
+}
+
+/* Image row layout for gallery */
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+/* Gallery images styling */
+.image-row img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 16px rgba(5, 20, 184, 0.15);
+    object-fit: cover;
+}
+
+/* Footer styles */
+footer {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer paragraph spacing */
+footer p {
+    margin: 0;
+}
+
+/* Footer social media icon row */
+footer .socialmedia {
+    display: flex;  /* Inline icons */
+    align-items: center;
+    gap: 0;   /* No extra gap by default */
+}
+
+/* Footer social media icon images */
+footer .socialmedia a  img{
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+/* Section heading centering and spacing */
+section h2 {      /* Center the heading */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;    /* Reduce space below h2 */
+}
+
+/* Section paragraph spacing */
+section p {
+    margin-top: 0;   /* Space out logo and nav */
 }
