@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML Form - User Poll</title>
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | Awuah Dennis | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact information</legend>
+                <!-- Form elements will go here -->
+                 <!-- Full Name input -->
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+                <!-- Email input -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="useremail" required>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <!-- Form elements will go here -->
+                 <!--Favorite browser-->
+                <label for="browser">What is your favorite browser?</label>
+                <select id="browser" name="browser">
+                    <option value="chrome">Google Chrome</option>
+                    <option value="firefox">Mozilla Firefox</option>
+                    <option value="safari">Apple Safari</option>
+                    <option value="edge">Microsoft Edge</option>
+                    <option value="other">Other</option>
+                </select>
+                <!--Favorite pet-->
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" id="pet" name="pet">
+                <!--List of places lived-->
+                <label for="places">List the places you have lived:</label>
+                <textarea id="places" name="places" rows="4" placeholder="GHANA, HOLLAND, USA, ENGLAND, DUBAI"></textarea>
+            </fieldset>
+        </form>
+        <button type="submit">Submit</button>
+    </main>
+    <footer>
+        <p>&copy; 2025 | HTML Form - User Poll Activity | Awuah Dennis</p>
+    </footer>
+</body>
+</html>
