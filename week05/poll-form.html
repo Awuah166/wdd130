@@ -19,15 +19,21 @@
                 <legend>Contact information</legend>
                 <!-- Form elements will go here -->
                  <!-- Full Name input -->
+                <div class="form-item column2">
                 <label for="fullname">Full Name:</label>
                 <input type="text" id="fullname" name="fullname" required>
+                </div>
                 <!-- Email input -->
+                 <div class="form-item column2">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="useremail" required>
+                </div>
             </fieldset>
             <fieldset>
+                
                 <legend>Questions</legend>
                 <!-- Form elements will go here -->
+                <div class="form-item column1">
                  <!--Favorite browser-->
                 <label for="browser">What is your favorite browser?</label>
                 <select id="browser" name="browser">
@@ -37,9 +43,12 @@
                     <option value="edge">Microsoft Edge</option>
                     <option value="other">Other</option>
                 </select>
+                </div>
                 <!--Favorite pet-->
+                <div class="form-item column1">
                 <label for="pet">Do you have a household pet?</label>
                 <input type="checkbox" id="pet" name="pet">
+                </div>
                 <!--List of places lived-->
                 <label for="places">List the places you have lived:</label>
                 <textarea id="places" name="places" rows="4" placeholder="GHANA, HOLLAND, USA, ENGLAND, DUBAI"></textarea>
