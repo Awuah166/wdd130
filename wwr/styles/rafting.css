@@ -390,3 +390,15 @@ section p {
     color: var(--secondary-color);
     text-decoration: none;
 }
+
+/* Style for the map iframe */
+.map iframe {
+    width: 100%;
+    max-width: 700px;
+    height: 300px;
+    display: block;
+    margin: 1.5rem auto;
+    border: 2px solid #b3c6e7;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(5, 20, 184, 0.07);
+}
