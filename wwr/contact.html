@@ -41,42 +41,39 @@
         <section class="contact-form">
             <h2>Send Us a Message</h2>
             <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-            <p><strong>Purpose of Message:</strong></p>
-            <div class="purpose-options">
-                <label for="purpose-general">
-                <input type="radio" id="purpose-general" name="purpose" value="general" required>
-                General Inquiry
-                </label><br>
-                <label for="purpose-reservation">
-                <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
-                Reservation Question
-                </label><br>
-                <label for="purpose-suggestion">
-                <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
-                Website Suggestion
+                <p><strong>Purpose of Message:</strong></p>
+                <div class="purpose-options">
+                    <label for="purpose-general">
+                        <input type="radio" id="purpose-general" name="purpose" value="general" required>
+                        General Inquiry
+                    </label><br>
+                    <label for="purpose-reservation">
+                        <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                        Reservation Question
+                    </label><br>
+                    <label for="purpose-suggestion">
+                        <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
+                </div>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label for="subscribe">
+                    <input type="checkbox" name="subscribe" id="subscribe">
+                    Please subscribe me to the monthly newsletter
                 </label>
-            </div>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <label for="subscribe">
-                <input type="checkbox" name="subscribe" id="subscribe">
-                Please subscribe me to the monthly newsletter
-            </label>
+                <button type="submit">Send Message</button>
             </form>
         </section>
-
-        <label>
-            <input type="checkbox" name="subscribe" id="subscribe">
-            Please subscribe me to the monthly newsletter
-        </label>
 
         <!-- Map Section -->
         <section class="map">
