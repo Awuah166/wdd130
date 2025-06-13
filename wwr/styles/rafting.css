@@ -427,7 +427,7 @@ section p {
     border: none;
     border-radius: 7px;
     text-decoration: none;
-    box-shadow: o 2px 8px rgba(5, 20, 184, 0.10);
+    box-shadow: 0 2px 8px rgba(5, 20, 184, 0.10);
     transition: background 0.3s, transform 0.3s;
     z-index: 2;
 }
@@ -463,7 +463,7 @@ section p {
 
 .adventure-row img {
     width: 100%;
-    max-width: 320x;
+    max-width: 320px;
     height: 320px; /* Fixed height for uniformity */
     object-fit: cover;
     border-radius: 10px;
