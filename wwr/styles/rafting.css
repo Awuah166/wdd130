@@ -436,45 +436,65 @@ section p {
     background-color: #1939a6;
     transform: translate(-50%, -50%) scale(1.05);
 }
-
-.adventure-gallery {
+.featured-adventures {
+    max-width: 800px;
     margin: 2.5rem auto;
-    max-width: 1000px;
-    padding: 0 1rem;
-}
-
-.gallery-row {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: nowrap;
-}
-
-.gallery-row figure {
-    flex: 0 1 300px; /* Flex-grow, flex-shrink, and base width */
-    min-width: 220px; /* Minimum width for each figure */
-    max-width: 300px; /* Maximum width for each figure */
-    margin: 0;
+    padding: 1rem;
     text-align: center;
-    background-color: var(--primary-color);
+}
+
+.adventure-row {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.adventure-row figure {
+    margin: 0;
+    background: #f8faff;
     border-radius: 10px;
     box-shadow: 0 2px 12px rgba(5, 20, 184, 0.07);
     padding: 1rem 0.5rem 0.5rem 0.5rem;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
 }
 
-.gallery-row img {
+.adventure-row img {
     width: 100%;
-    max-width: 220px;
-    height: 140px; /* Fixed height for uniformity */
+    max-width: 320x;
+    height: 320px; /* Fixed height for uniformity */
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 0.7rem;
+    transition: transform 0.3s ease-in-out;
 }
 
-.gallery-row figcaption {
+.adventure-row img:hover {
+    transform: scale(1.08);
+}
+
+.adventure-row figcaption {
     font-size: 1.05rem;
     color: var(--secondary-color);
-    font-weight: 600;
+    font-weight: 500;
+}
+
+.visit-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.3rem 1rem;
+    background-color: var(--secondary-color, #1939a6);
+    color: var(--primary-color);
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+}
+
+.visit-link:hover {
+    background-color: blue;
 }
 
 .newsletter-cta {
